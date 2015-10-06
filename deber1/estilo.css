@@ -1,0 +1,128 @@
+﻿
+#header {
+    background-color:white;
+    color:black;
+    text-align:right;
+    padding:5px;
+	 top:0; left:0;
+	 height:12%;
+     width:100%;
+	 
+}
+
+ #header li {
+  display:inline;
+  float:left;
+  width:7%;
+  font-size:15px;
+}
+
+#fondo {
+z-index:-1;
+}
+
+
+#h1 {
+color:gray;
+text-align:center;
+}
+
+#bannerMov
+{
+position:absolute;
+height:100%;
+width:100%;
+float:left;
+
+
+}
+
+#portfolio
+{
+  position: absolute;
+  background-color:#2E3E4F;
+  padding:5px;
+   height:52%;
+  width:100%;
+	float:left;
+  
+}
+
+#titulos3
+{
+
+  color:#FF6600;
+  font-size: 25px;
+  text-align: left;
+  float:left;;
+
+}
+
+#titulos2
+{
+
+  color:#FF6600;
+  font-size: 15px;
+  text-align: left;
+  float:left;
+
+}
+
+#offer
+{
+  
+    background-color:#F9F9F9;
+    position: absolute;
+    height:500%;
+  width:100%;
+  float:;   
+
+
+}
+
+#infTi2{
+color:#F9F9F9;
+  font-size: 15px;
+  text-align: left;
+  
+
+}
+
+#pie
+
+{
+   background-color:#2E3E4F;
+    position: absolute;
+    height:80%;
+  width:100%;
+ }
+
+ #tit3
+ {
+  color:#0099FF;
+  font-size: 30px;
+  text-align: center;
+  
+
+ }
+
+ #infP
+ {
+  color:#FF6600;
+  font-size: 15px;
+
+ }
+
+ #offerI{
+
+  color:#47473E;
+  text-align: center;
+  font-size: 15px;
+ }
+
+ #textoh1
+ {
+  text-align: center;
+  font-size: 20;
+  color:#47473E;
+ }
