@@ -1,0 +1,38 @@
+#cuerpo
+{
+
+width: 800px;
+height: 500px;
+position: absolute;
+top: 20%;
+left:30%;
+text-align:center;
+
+}
+
+#txtValor
+{
+
+position: relative;
+float:left;
+
+
+}
+
+#btnConvertir
+{
+	float:center;
+	text-align: center;
+}
+
+
+fieldset {
+
+	 
+	max-width:600px;
+}
+
+#resultado
+{
+	text-align:left;
+}
