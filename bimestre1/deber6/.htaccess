@@ -1,0 +1,2 @@
+php_value auto_prepend_file D:\xampp\htdocs\deber6\inc\config.php
+php_value include_path D:\xampp\htdocs\deber6\inc;D:\xampp\htdocs\deber6\php
