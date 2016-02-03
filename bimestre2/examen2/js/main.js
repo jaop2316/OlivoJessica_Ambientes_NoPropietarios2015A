@@ -23,6 +23,7 @@ $(document).ready(function(){
 
      				url: "rpc/verificar_email.php",
         			type: "post",
+                    dataType:"json",
         			data:{
          				email: function(){
             			return $('#email').val();
@@ -89,7 +90,7 @@ $(document).ready(function(){
 			$.ajax({
 				url: 'rpc/procesar.php',
 				type: 'POST',
-				//dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+				dataType: 'json',
 				data: {
 
          			 nombre:$('form#estudiante #nombre').val(),
@@ -100,7 +101,14 @@ $(document).ready(function(){
 					})
 					.done(function(msg) {
 					$('#estudiante').trigger("reset");
+                    if(msg="true")
+                    {
 					window.location.href='index.php';
+                    }
+                    else
+                    {
+                        alert("No se realizo el registro")
+                    }
 					console.log("success");
 					})
 					.fail(function() {
@@ -119,7 +127,7 @@ $(document).ready(function(){
      	window.location.href='index.php';
      });
 
-    $('#btnIniciar').on('click',function(e) {
+    /*$('#btnIniciar').on('click',function(e) {
     	event.preventDefault();
     	$.ajax({
     		url: 'rpc/inicio_sesion.php',
@@ -133,7 +141,7 @@ $(document).ready(function(){
     	.done(function(msg) {
     		if(msg=="true")
     		{
-    			window.location.href='matriculacion.php';
+    			//window.location.href='matriculacion.php';
     		}
     		else{
     			alert("El usuario o contraseña ingresados no son correctos")
@@ -149,6 +157,63 @@ $(document).ready(function(){
     		console.log("complete");
     	});
     	
+
+    });*/
+
+    $('#nivel').on('change',function(e) {
+        event.preventDefault();
+        
+        $.ajax({
+            url: 'rpc/get_materias.php',
+            type: 'POST',
+           // dataType: 'json',
+            data: {
+                nivel:$('#nivel').val()
+        },
+        })
+        .done(function(msg) {
+            $('#lstMaterias').html(msg);
+            console.log("success");
+        })
+        .fail(function() {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        });
+        
+
+    });
+    
+    var mats=[];
+    $('#btnRegistrarMaterias').on('click', function(e) {
+        event.preventDefault();
+        $('input[type=checkbox]').each(function(){
+            if (this.checked) {
+                mats.push($(this).val());
+            }
+        }); 
+        $.ajax({
+            url: 'rpc/registrarMaterias.php',
+            type: 'POST',
+           dataType: 'json',
+            data: {
+                materias: mats
+        },
+        })
+        .done(function(msg) {
+            $('#mensaje').html(msg.result);
+            $('#materias_registradas tbody').html(msg.regisMaterias)
+            console.log("success");
+        })
+        .fail(function() {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        });
+        
+
 
     });
 

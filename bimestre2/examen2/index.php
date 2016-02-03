@@ -4,36 +4,36 @@
 	<meta charset="utf-8"> 
 	<title>Inicio de Sesion</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-	<div clss="row">
+	<div clss="row" id="saludoIndex" >
 		<div class="col-md-12">
-			<h5> Inicia la sesion para matricularte </h5>
+			<h2> Inicia la sesion para matricularte </h2>
 		</div>
 	</div>
-   <form action="" method='POST' id="inicio">
+   <form action="rpc/inicio_sesion.php" method='POST' id="inicio">
 	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-6">
+		<div class="col-md-10 col-md-offset-3">
+			<div class="row" id="filaEmail">
+				<div class="col-md-3">
 					<label for="Email">Email</label>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<input type="text" id="email" name="email"placeholder="Email" value="">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<label for="contrasenia">Contrasenia</label>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<input type="password" id="contrasenia" name="contrasenia"placeholder="Contraseña" value="">
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
+			<div class="row" id="panelInicio">
+				<div class="col-md-3">
 					<button class="form-control" id="btnIniciar">Inicia Sesion</button>
 				</div>
 				<div class="col-md-6">

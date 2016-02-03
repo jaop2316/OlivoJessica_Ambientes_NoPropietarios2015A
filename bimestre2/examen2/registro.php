@@ -4,66 +4,66 @@
 	<meta charset="utf-8"> 
 	<title>Registro de Estudiantes</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="container">
-<div class="row">
+<div class="row" id="saludoMatricula">
 	<div class="col-md-12">
-		<h4> Registrate para poder matricularte</h4>
+		<h1> Registrate para poder matricularte</h1>
 	</div>
 </div>
 <form action="" method='POST' id="estudiante" novalidate="novalidate">
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<label for="nombre"> Nombre </label>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<input type="text" id="nombre" name="nombre" placeholder="Nombre" value="">
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<label for="apellido"> Apellido </label>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<input type="text" id="apellido" name="apellido"placeholder="Apellido" value="">
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<label for="email"> Email </label>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<input type="text" id="email" name="email"placeholder="Email" value="">
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<label for="contrasenia">Contraseña </label>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<input type="password" id="contrasenia" name="contrasenia"placeholder="Contraseña" value="">
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<label for="contrasenia2">Verificar Contraseña </label>
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-3">
 		<input type="password" id="contrasenia2" name="contrasenia2"placeholder="Verificar Contraseña" value="">
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-md-6">
+<div class="row" id="botonesRegistro">
+	<div class="col-md-3">
 		<button class="form-control" id="btnRegistrate"> Registrate</button>
 	</div>
-    <div class="col-md-6">
+    <div class="col-md-3">
     	<button class="form-control" id="btnCancelar">Cancelar</button>
     </div>
 

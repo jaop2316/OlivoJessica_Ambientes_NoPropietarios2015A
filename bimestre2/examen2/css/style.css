@@ -1,0 +1,74 @@
+body{
+
+	background-color:#e0e0d1;
+}
+
+
+#divBoton{
+
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+#lstMaterias
+{
+	margin-top:15px;
+	background-color:#e5ffff;
+	margin-bottom:50px;
+}
+
+#saludo{
+
+	background-color: #f0c2e0;
+	padding-bottom:30px;
+}
+
+#divNivel{
+
+	margin-top:30px;
+	
+}
+
+#titMaterias
+{
+	margin-top:30px;
+	background-color: #e5ffff;
+}
+
+#regMaterias{
+
+	margin-top:15px;
+
+}
+
+#saludoIndex{
+   margin-top:15px;
+	
+   margin-bottom:30px;
+
+}
+
+#panelInicio{
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+#filaEmail{
+
+	margin-top:80px;
+	margin-bottom:30px;
+}
+
+#saludoMatricula{
+ 
+ margin-top:15px;
+ margin-bottom:30px;
+
+
+}
+
+#botonesRegistro{
+	margin-top:15px;
+ margin-bottom:30px;
+
+}

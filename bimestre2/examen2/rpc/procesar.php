@@ -14,10 +14,12 @@ $result="";
                   	VALUES ('$nombre','$apellido','$email','$contrasenia')";
 					$res = $conn->query($q_insert);
 					if(!$res){
-     					 $result = 'Existi&oacute; un error al insertar.' . $conn->error;
+     					 $result = 'true.' . $conn->error;
+               header('Location:index.php');
+
  					 } 
    				    else {
-     					 $result = 'Mensaje enviado con &eacute;xito.';
+     					 $result = 'false';
     					 }
   					}
 
